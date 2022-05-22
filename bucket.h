@@ -8,6 +8,7 @@ struct bucket {
     int* data; // массив элементов корзины
 };
 
+/*
 void bucketSort(int* arr, int n)
 {
     std::vector<int> b[10];
@@ -29,8 +30,9 @@ void bucketSort(int* arr, int n)
         for (int j = 0; j < b[i].size(); j++)
             arr[index++] = b[i][j];
 }
+*/
 
-/*void bucketSort(int* arr, const int n)
+void bucketSort(int* arr, const int n)
 {
     struct bucket buckets[10];
     // вычисляем значение экспоненты
@@ -55,4 +57,3 @@ void bucketSort(int* arr, int n)
     }
 
 }
-*/
